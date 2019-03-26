@@ -1,0 +1,73 @@
+{
+  "id": "b8aadadd-92ce-4788-8a41-88f3348dd5b2",
+  "alias": "OrganizationPolicyWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "OrganizationPolicy"
+      },
+      "description": {
+        "default": "Bloom Innerpage"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "OrganizationPolicy"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "organization-policy-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "organization-policy-web-part": {
+        "type": "path",
+        "path": "dist/organization-policy-web-part.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+        "globalName": "jquery"
+      },
+      "jplist-core": {
+        "type": "path",
+        "path": "src/ExternalRef/js/jplist-core.js",
+        "globalDependencies": [
+          "jquery"
+        ],
+        "globalName": "jplist-core"
+      },
+      "jplist-pagination": {
+        "type": "path",
+        "path": "src/ExternalRef/js/jplist-pagination.js",
+        "globalDependencies": [
+          "jquery"
+        ],
+        "globalName": "jplist-pagination"
+      },
+      "OrganizationPolicyWebPartStrings": {
+        "defaultPath": "lib/webparts/organizationPolicy/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.5.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.5.1",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      }
+    }
+  }
+}

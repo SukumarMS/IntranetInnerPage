@@ -1,0 +1,15 @@
+declare function addItems(listName: string, listColumns: any): Promise<void>;
+declare function additemsattachment(listName: string, file: any, listColumns?: any): Promise<void>;
+declare function readItems(listName: string, listColumns: string[], topCount: number, orderBy: string, filterKey?: string, filterValue?: any): Promise<any>;
+declare function readItem(listName: string, listColumns: string[], topCount: number, orderBy: string, filterKey?: string, filterValue?: any, Lookupvalue?: string): Promise<any>;
+declare function updateItem(listName: string, id: number, listColumns: any): Promise<any>;
+declare function deleteItem(listName: string, itemID: number): Promise<void>;
+declare function GetFolder(listName: string): Promise<any>;
+declare function DeleteFolder(listName: string, folderName: string): Promise<void>;
+declare function batchDelete(listName: string, selectedArray: number[], siteURL: any): Promise<void>;
+declare function checkUserinGroup(Componentname: string, email: string, callback: any): Promise<void>;
+declare function formString(listColumns: string[]): string;
+declare function formatDate(dateVal: any): string;
+declare function GetQueryStringParams(sParam: any): string;
+declare function base64ToArrayBuffer(base64: any): ArrayBuffer;
+export { addItems, readItems, readItem, deleteItem, updateItem, DeleteFolder, GetFolder, formString, additemsattachment, checkUserinGroup, batchDelete, formatDate, GetQueryStringParams, base64ToArrayBuffer };

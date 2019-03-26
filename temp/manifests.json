@@ -1,0 +1,1512 @@
+[
+  {
+    "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a",
+    "alias": "SPLodashSubset",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-lodash-subset",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-lodash-subset/"
+      ],
+      "scriptResources": {
+        "sp-lodash-subset": {
+          "type": "path",
+          "path": "dist/sp-lodash-subset.js"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+    "alias": "SPCoreLibrary",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-core-library",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-core-library/"
+      ],
+      "scriptResources": {
+        "sp-core-library": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-core-library_en-us.js"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "29bd516f-4ece-40b7-8028-597cbc65a223",
+    "alias": "SpOfficeUIFabricCore",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "office-ui-fabric-core",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-office-ui-fabric-core/"
+      ],
+      "scriptResources": {
+        "office-ui-fabric-core": {
+          "type": "path",
+          "path": "dist/office-ui-fabric-core.js"
+        },
+        "@microsoft/load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "f97266fb-ccb7-430e-9384-4124d05295d3",
+    "alias": "Decorators",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "decorators",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/decorators/"
+      ],
+      "scriptResources": {
+        "decorators": {
+          "type": "path",
+          "path": "dist/decorators.js"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "02a01e42-69ab-403d-8a16-acd128661f8e",
+    "alias": "OfficeUIFabricReact",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "office-ui-fabric-react-bundle",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/office-ui-fabric-react-bundle/"
+      ],
+      "scriptResources": {
+        "office-ui-fabric-react-bundle": {
+          "type": "path",
+          "path": "dist/office-ui-fabric-react-bundle.js"
+        },
+        "react": {
+          "type": "component",
+          "version": "15.6.2",
+          "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+          "failoverPath": "node_modules/react/dist/react.js"
+        },
+        "@microsoft/load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        },
+        "react-dom": {
+          "type": "component",
+          "version": "15.6.2",
+          "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+          "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "manifestVersion": 2,
+    "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8",
+    "alias": "SPDiagnostics",
+    "componentType": "Library",
+    "version": "1.0.0",
+    "loaderConfig": {
+      "entryModuleId": "sp-diagnostics",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-diagnostics/"
+      ],
+      "scriptResources": {
+        "sp-diagnostics": {
+          "type": "path",
+          "path": "dist/sp-diagnostics.js"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "manifestVersion": 2,
+    "id": "e40f8203-b39d-425a-a957-714852e33b79",
+    "alias": "SPDynamicData",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "loaderConfig": {
+      "entryModuleId": "sp-dynamic-data",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-dynamic-data/"
+      ],
+      "scriptResources": {
+        "sp-dynamic-data": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-dynamic-data_en-us.js"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6",
+    "alias": "SPHttp",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-http",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-http/"
+      ],
+      "scriptResources": {
+        "sp-http": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-http_en-us.js"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/decorators": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "f97266fb-ccb7-430e-9384-4124d05295d3"
+        },
+        "@microsoft/sp-diagnostics": {
+          "type": "component",
+          "version": "1.0.0",
+          "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "1c4541f7-5c31-41aa-9fa8-fbc9dc14c0a8",
+    "alias": "SPPageContext",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-page-context",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-page-context/"
+      ],
+      "scriptResources": {
+        "sp-page-context": {
+          "type": "path",
+          "path": "dist/sp-page-context.js"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-diagnostics": {
+          "type": "component",
+          "version": "1.0.0",
+          "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8"
+        },
+        "@microsoft/sp-dynamic-data": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "e40f8203-b39d-425a-a957-714852e33b79"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "1e384972-6346-49b4-93c7-b2e6763938e6",
+    "alias": "sp-polyfills",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-polyfills",
+      "internalModuleBaseUrls": [
+        "/"
+      ],
+      "scriptResources": {
+        "sp-polyfills": {
+          "type": "path",
+          "path": "dist/sp-polyfills.js"
+        }
+      }
+    }
+  },
+  {
+    "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f",
+    "alias": "SPLoader",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-loader",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-loader/"
+      ],
+      "scriptResources": {
+        "sp-loader": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-loader_en-us.js"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-diagnostics": {
+          "type": "component",
+          "version": "1.0.0",
+          "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8"
+        },
+        "@ms/sp-telemetry": {
+          "type": "component",
+          "version": "0.2.2",
+          "id": "8217e442-8ed3-41fd-957d-b112e841286a"
+        },
+        "@microsoft/sp-http": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+        },
+        "@microsoft/sp-page-context": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c4541f7-5c31-41aa-9fa8-fbc9dc14c0a8"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        },
+        "@microsoft/sp-dynamic-data": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "e40f8203-b39d-425a-a957-714852e33b79"
+        },
+        "@microsoft/load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "467dc675-7cc5-4709-8aac-78e3b71bd2f6",
+    "alias": "SPComponentBase",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-component-base",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-component-base/"
+      ],
+      "scriptResources": {
+        "sp-component-base": {
+          "type": "path",
+          "path": "dist/sp-component-base.js"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-dynamic-data": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "e40f8203-b39d-425a-a957-714852e33b79"
+        },
+        "@microsoft/decorators": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "f97266fb-ccb7-430e-9384-4124d05295d3"
+        },
+        "@microsoft/sp-diagnostics": {
+          "type": "component",
+          "version": "1.0.0",
+          "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8"
+        },
+        "@microsoft/sp-page-context": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c4541f7-5c31-41aa-9fa8-fbc9dc14c0a8"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        },
+        "@microsoft/load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "974a7777-0990-4136-8fa6-95d80114c2e0",
+    "alias": "SPWebPartBase",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-webpart-base",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-webpart-base/"
+      ],
+      "scriptResources": {
+        "sp-webpart-base": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-webpart-base_en-us.js"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/decorators": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "f97266fb-ccb7-430e-9384-4124d05295d3"
+        },
+        "react": {
+          "type": "component",
+          "version": "15.6.2",
+          "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+          "failoverPath": "node_modules/react/dist/react.js"
+        },
+        "@microsoft/sp-diagnostics": {
+          "type": "component",
+          "version": "1.0.0",
+          "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        },
+        "@microsoft/office-ui-fabric-react-bundle": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "02a01e42-69ab-403d-8a16-acd128661f8e"
+        },
+        "@ms/sp-telemetry": {
+          "type": "component",
+          "version": "0.2.2",
+          "id": "8217e442-8ed3-41fd-957d-b112e841286a"
+        },
+        "@microsoft/load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        },
+        "@microsoft/sp-component-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "467dc675-7cc5-4709-8aac-78e3b71bd2f6"
+        },
+        "react-dom": {
+          "type": "component",
+          "version": "15.6.2",
+          "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+          "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+        },
+        "@microsoft/sp-http": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+        },
+        "@ms/sp-load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        },
+        "@microsoft/sp-page-context": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c4541f7-5c31-41aa-9fa8-fbc9dc14c0a8"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "0773bd53-a69e-4293-87e6-ba80ea4d614b",
+    "alias": "SPExtensionBase",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-extension-base",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-extension-base/"
+      ],
+      "scriptResources": {
+        "sp-extension-base": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-extension-base_en-us.js"
+        },
+        "@microsoft/sp-component-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "467dc675-7cc5-4709-8aac-78e3b71bd2f6"
+        },
+        "@ms/sp-telemetry": {
+          "type": "component",
+          "version": "0.2.2",
+          "id": "8217e442-8ed3-41fd-957d-b112e841286a"
+        },
+        "@microsoft/sp-diagnostics": {
+          "type": "component",
+          "version": "1.0.0",
+          "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8"
+        },
+        "@microsoft/decorators": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "f97266fb-ccb7-430e-9384-4124d05295d3"
+        },
+        "@microsoft/sp-http": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "4df9bb86-ab0a-4aab-ab5f-48bf167048fb",
+    "alias": "SPApplicationBase",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "preloadComponents": [
+      "c0c518b8-701b-4f6f-956d-5782772bb731"
+    ],
+    "loaderConfig": {
+      "entryModuleId": "sp-application-base",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-application-base/"
+      ],
+      "scriptResources": {
+        "sp-application-base": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-application-base_en-us.js"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-diagnostics": {
+          "type": "component",
+          "version": "1.0.0",
+          "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8"
+        },
+        "@ms/sp-telemetry": {
+          "type": "component",
+          "version": "0.2.2",
+          "id": "8217e442-8ed3-41fd-957d-b112e841286a"
+        },
+        "@microsoft/sp-http": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        },
+        "@microsoft/sp-extension-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "0773bd53-a69e-4293-87e6-ba80ea4d614b"
+        },
+        "@microsoft/decorators": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "f97266fb-ccb7-430e-9384-4124d05295d3"
+        },
+        "@microsoft/load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        },
+        "@microsoft/sp-page-context": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c4541f7-5c31-41aa-9fa8-fbc9dc14c0a8"
+        },
+        "@microsoft/sp-component-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "467dc675-7cc5-4709-8aac-78e3b71bd2f6"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        },
+        "@ms/sp-load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "4d5eb168-6729-49a8-aec7-0e397f486b6e",
+    "alias": "SPClientPreview",
+    "componentType": "Library",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-client-preview",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-client-preview/"
+      ],
+      "scriptResources": {
+        "sp-client-preview": {
+          "type": "path",
+          "path": "dist/sp-client-preview.js"
+        },
+        "@microsoft/sp-http": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        },
+        "@ms/sp-telemetry": {
+          "type": "component",
+          "version": "0.2.2",
+          "id": "8217e442-8ed3-41fd-957d-b112e841286a"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "8be81a5c-af38-4bb2-af97-afa3b64dfbed",
+    "alias": "WebPartWorkbench",
+    "componentType": "Application",
+    "version": "1.5.1",
+    "manifestVersion": 2,
+    "title": {
+      "default": "WebpartWorkbench"
+    },
+    "description": {
+      "default": "WebpartWorkbench"
+    },
+    "assemblyId": "5dae53c4-db1e-4d0b-b8b2-88c874dabf83",
+    "preloadComponents": [
+      "8217e442-8ed3-41fd-957d-b112e841286a",
+      "4df9bb86-ab0a-4aab-ab5f-48bf167048fb",
+      "05ed6956-59ad-4aa6-9e4e-b832c96ae87b"
+    ],
+    "preloadOptions": {
+      "shouldPreloadWeb": true,
+      "shouldPreloadUser": true,
+      "shouldPreloadList": false,
+      "shouldPreloadItem": true,
+      "shouldPreloadQuickLaunch": true
+    },
+    "loaderConfig": {
+      "entryModuleId": "sp-webpart-workbench",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-webpart-workbench/"
+      ],
+      "scriptResources": {
+        "sp-webpart-workbench": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-webpart-workbench_en-us.js"
+        },
+        "@microsoft/office-ui-fabric-react-bundle": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "02a01e42-69ab-403d-8a16-acd128661f8e"
+        },
+        "react": {
+          "type": "component",
+          "version": "15.6.2",
+          "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+          "failoverPath": "node_modules/react/dist/react.js"
+        },
+        "@microsoft/load-themed-styles": {
+          "type": "component",
+          "version": "0.1.2",
+          "id": "229b8d08-79f3-438b-8c21-4613fc877abd"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@ms/sp-telemetry": {
+          "type": "component",
+          "version": "0.2.2",
+          "id": "8217e442-8ed3-41fd-957d-b112e841286a"
+        },
+        "@microsoft/sp-diagnostics": {
+          "type": "component",
+          "version": "1.0.0",
+          "id": "78359e4b-07c2-43c6-8d0b-d060b4d577e8"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        },
+        "react-dom": {
+          "type": "component",
+          "version": "15.6.2",
+          "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+          "failoverPath": "node_modules/react-dom/dist/react-dom.js"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        },
+        "@microsoft/sp-page-context": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c4541f7-5c31-41aa-9fa8-fbc9dc14c0a8"
+        },
+        "@microsoft/sp-application-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "4df9bb86-ab0a-4aab-ab5f-48bf167048fb"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "1a3aabeb-38ed-49de-abdf-a61793ef955f",
+    "alias": "ViewListItemWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "ViewListItem"
+        },
+        "description": {
+          "default": "Bloom Innerpage"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "ViewListItem"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "view-list-item-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "view-list-item-web-part": {
+          "type": "path",
+          "path": "dist/view-list-item-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "ViewListItemWebPartStrings": {
+          "defaultPath": "lib/webparts/viewListItem/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        }
+      }
+    }
+  },
+  {
+    "id": "22037260-2530-4077-88b9-44ab8815461b",
+    "alias": "ImageGalleryDetailWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "ImageGalleryDetail"
+        },
+        "description": {
+          "default": "Bloom Innerpage"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "ImageGalleryDetail"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "image-gallery-detail-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "image-gallery-detail-web-part": {
+          "type": "path",
+          "path": "dist/image-gallery-detail-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "bootstrap": {
+          "type": "path",
+          "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "bootstrap"
+        },
+        "ImageGalleryDetailWebPartStrings": {
+          "defaultPath": "lib/webparts/imageGalleryDetail/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        }
+      }
+    }
+  },
+  {
+    "id": "30a995d1-97ea-48bf-a7dc-f1f153f4ac3a",
+    "alias": "ImageGalleryWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "ImageGallery"
+        },
+        "description": {
+          "default": "Bloom Innerpage"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "ImageGallery"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "image-gallery-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "image-gallery-web-part": {
+          "type": "path",
+          "path": "dist/image-gallery-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "ImageGalleryWebPartStrings": {
+          "defaultPath": "lib/webparts/imageGallery/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        }
+      }
+    }
+  },
+  {
+    "id": "3ca92102-a9d8-416d-87e5-e61409c90814",
+    "alias": "CorporateDiscountWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "CorporateDiscount"
+        },
+        "description": {
+          "default": "CorporateDiscount description"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "CorporateDiscount"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "corporate-discount-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "corporate-discount-web-part": {
+          "type": "path",
+          "path": "dist/corporate-discount-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "jplist-core": {
+          "type": "path",
+          "path": "src/ExternalRef/js/jplist-core.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "jplist-core"
+        },
+        "jplist-pagination": {
+          "type": "path",
+          "path": "src/ExternalRef/js/jplist-pagination.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "jplist-pagination"
+        },
+        "CorporateDiscountWebPartStrings": {
+          "defaultPath": "lib/webparts/corporateDiscount/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        }
+      }
+    }
+  },
+  {
+    "id": "40c027de-7e35-441d-a789-ca5f8d776ed3",
+    "alias": "AddListItemWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "AddListItem"
+        },
+        "description": {
+          "default": "Bloom Inner page"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "AddListItem"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "add-list-item-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "add-list-item-web-part": {
+          "type": "path",
+          "path": "dist/add-list-item-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "bootstrap": {
+          "type": "path",
+          "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "bootstrap"
+        },
+        "AddListItemWebPartStrings": {
+          "defaultPath": "lib/webparts/addListItem/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        }
+      }
+    }
+  },
+  {
+    "id": "42fc1fa1-1d7c-4dc1-bbd9-46cac86421f3",
+    "alias": "EditListItemsWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "EDIT List Items"
+        },
+        "description": {
+          "default": "EDIT List Items Description"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "EDIT List Items"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "edit-list-items-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "edit-list-items-web-part": {
+          "type": "path",
+          "path": "dist/edit-list-items-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "bootstrap": {
+          "type": "path",
+          "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "bootstrap"
+        },
+        "EditListItemsWebPartStrings": {
+          "defaultPath": "lib/webparts/editListItems/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        }
+      }
+    }
+  },
+  {
+    "id": "72385f5b-23e7-4de6-99cb-1c98c7590308",
+    "alias": "VideoGalleryWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "VideoGallery"
+        },
+        "description": {
+          "default": "Bloom Innerpage"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "VideoGallery"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "video-gallery-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "video-gallery-web-part": {
+          "type": "path",
+          "path": "dist/video-gallery-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "bootstrap": {
+          "type": "path",
+          "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "bootstrap"
+        },
+        "VideoGalleryWebPartStrings": {
+          "defaultPath": "lib/webparts/videoGallery/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        }
+      }
+    }
+  },
+  {
+    "id": "88afaf7b-bac1-403b-80ee-f0d2604b32c3",
+    "alias": "VideoGalleryCollectionsWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "VideoGalleryCollections"
+        },
+        "description": {
+          "default": "VideoGalleryCollections description"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "VideoGalleryCollections"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "video-gallery-collections-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "video-gallery-collections-web-part": {
+          "type": "path",
+          "path": "dist/video-gallery-collections-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "bootstrap": {
+          "type": "path",
+          "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "bootstrap"
+        },
+        "VideoGalleryCollectionsWebPartStrings": {
+          "defaultPath": "lib/webparts/videoGalleryCollections/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        }
+      }
+    }
+  },
+  {
+    "id": "8abac69e-0ad3-4cbe-9385-3416b7e6ef93",
+    "alias": "ListviewWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "Listview"
+        },
+        "description": {
+          "default": "Bloom Inner page"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "Listview"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "listview-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "listview-web-part": {
+          "type": "path",
+          "path": "dist/listview-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "jplist-core": {
+          "type": "path",
+          "path": "src/ExternalRef/js/jplist-core.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "jplist-core"
+        },
+        "jplist-pagination": {
+          "type": "path",
+          "path": "src/ExternalRef/js/jplist-pagination.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "jplist-pagination"
+        },
+        "ListviewWebPartStrings": {
+          "defaultPath": "lib/webparts/listview/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        }
+      }
+    }
+  },
+  {
+    "id": "b8aadadd-92ce-4788-8a41-88f3348dd5b2",
+    "alias": "OrganizationPolicyWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "OrganizationPolicy"
+        },
+        "description": {
+          "default": "Bloom Innerpage"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "OrganizationPolicy"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "organization-policy-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "organization-policy-web-part": {
+          "type": "path",
+          "path": "dist/organization-policy-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "jplist-core": {
+          "type": "path",
+          "path": "src/ExternalRef/js/jplist-core.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "jplist-core"
+        },
+        "jplist-pagination": {
+          "type": "path",
+          "path": "src/ExternalRef/js/jplist-pagination.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "jplist-pagination"
+        },
+        "OrganizationPolicyWebPartStrings": {
+          "defaultPath": "lib/webparts/organizationPolicy/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        }
+      }
+    }
+  },
+  {
+    "id": "cfaab336-ed0e-41ef-b420-ece0a2346bd4",
+    "alias": "EditListItemWebPart",
+    "componentType": "WebPart",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+      {
+        "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+        "group": {
+          "default": "Other"
+        },
+        "title": {
+          "default": "EditListItem"
+        },
+        "description": {
+          "default": "Bloom Inner page"
+        },
+        "officeFabricIconFontName": "Page",
+        "properties": {
+          "description": "EditListItem"
+        }
+      }
+    ],
+    "loaderConfig": {
+      "entryModuleId": "edit-list-item-web-part",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "edit-list-item-web-part": {
+          "type": "path",
+          "path": "dist/edit-list-item-web-part.js"
+        },
+        "jquery": {
+          "type": "path",
+          "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+          "globalName": "jquery"
+        },
+        "bootstrap": {
+          "type": "path",
+          "path": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+          "globalDependencies": [
+            "jquery"
+          ],
+          "globalName": "bootstrap"
+        },
+        "EditListItemWebPartStrings": {
+          "defaultPath": "lib/webparts/editListItem/loc/en-us.js",
+          "type": "localizedPath"
+        },
+        "@microsoft/sp-webpart-base": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+        },
+        "@microsoft/sp-core-library": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+        },
+        "@microsoft/sp-loader": {
+          "type": "component",
+          "version": "1.5.1",
+          "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+        }
+      }
+    }
+  }
+]
